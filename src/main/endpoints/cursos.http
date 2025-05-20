@@ -1,0 +1,12 @@
+@url = https://animated-sniffle-qrgr9q76rpgh9x9x-8080.app.github.dev/
+
+POST {{url}}/cursos
+Content-Type: application/json
+
+{
+  "nome": "Java",
+  "descricao": "Curso de Java com Spring Boot",
+  "cargaHoraria": 40,
+  "modulos": [],
+  "alunos": []
+}
