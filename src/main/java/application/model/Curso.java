@@ -9,8 +9,6 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import java.util.List;
@@ -38,10 +36,5 @@ public class Curso {
     private List<Modulo> modulos;
 
     @ManyToMany(mappedBy = "cursos")
-    @JoinTable(
-        name = "aluno_curso",
-        joinColumns = @JoinColumn(name = "curso_id"),
-        inverseJoinColumns = @JoinColumn(name = "aluno_id")
-    )
     private List<Aluno> alunos;
 }
