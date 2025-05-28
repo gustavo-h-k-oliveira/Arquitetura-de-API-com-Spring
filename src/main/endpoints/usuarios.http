@@ -1,6 +1,10 @@
 @url = https://animated-sniffle-qrgr9q76rpgh9x9x-8080.app.github.dev/
 
-POST {{url}}/usuarios
+GET {{url}}/usuario
+
+###
+
+POST {{url}}/usuario
 Content-Type: application/json
 
 {
